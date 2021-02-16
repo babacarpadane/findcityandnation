@@ -1,17 +1,20 @@
-package it.objectmethod.citta.info;
+package it.objectmethod.country.info.dao.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class NomeContImpl implements NationForDao {
+import it.objectmethod.country.info.dao.NationDao;
+import it.objectmethod.country.info.models.Nation;
+
+public class NationDaoImpl implements NationDao {
 
 	private Connection getConnection() {
 		Connection conn = null;
 
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");//("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");// ("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:33060/", "omdev", "omdev");
 
 		} catch (Exception e) {

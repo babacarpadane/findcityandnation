@@ -1,4 +1,4 @@
-package it.objectmethod.citta.info;
+package it.objectmethod.country.info.models;
 
 public class City {
 	private Long id;

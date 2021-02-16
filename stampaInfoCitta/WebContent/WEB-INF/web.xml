@@ -4,24 +4,7 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
 	id="WebApp_ID" version="4.0">
 	<display-name>stampaInfoCitta</display-name>
-
-	<servlet>
-		<servlet-name>servletcity</servlet-name>
-		<servlet-class>it.objectmethod.citta.info.ServletCity</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>servletcity</servlet-name>
-		<url-pattern>/servletcity</url-pattern>
-	</servlet-mapping>
 	
-	<servlet>
-		<servlet-name>servnomecontinente</servlet-name>
-		<servlet-class>it.objectmethod.citta.info.ServletNation </servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>servnomecontinente</servlet-name>
-		<url-pattern>/servnomecontinente</url-pattern>
-	</servlet-mapping>
 	
 </web-app>
 

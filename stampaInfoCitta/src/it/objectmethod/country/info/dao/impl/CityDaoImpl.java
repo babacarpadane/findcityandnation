@@ -1,11 +1,14 @@
-package it.objectmethod.citta.info;
+package it.objectmethod.country.info.dao.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class FindCityImpl implements CityForDao {
+import it.objectmethod.country.info.dao.CityDao;
+import it.objectmethod.country.info.models.City;
+
+public class CityDaoImpl implements CityDao {
 
 	private Connection getConnection() {
 		Connection conn = null;
