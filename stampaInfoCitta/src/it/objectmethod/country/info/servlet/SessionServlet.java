@@ -19,9 +19,9 @@ public class SessionServlet extends HttpServlet {
 		String username = request.getParameter("username");
 		
 		HttpSession session = request.getSession();
-		//session.getAttribute("nome-session");
+		String nome_session = (String) session.getAttribute("nome-session");
 		session.setAttribute("nome-session", username);
-		request.setAttribute("usernamejsp", username);
+		request.setAttribute("usernamejsp", nome_session);
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 }

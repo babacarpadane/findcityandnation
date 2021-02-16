@@ -8,7 +8,7 @@
 </head>
 <body>
   <form name="username" >	
-    <p>Ciao ${sessionScope.usernamejsp}<br>
+    <p>Ciao ${usernamejsp}<br> <!-- sessionScope. -->
     Inserisci username <input type="text" name="username"><br>
     <input type="submit" name="login" value="Login" formaction="sessionservlet"	></p>		 
   </form>
@@ -26,8 +26,7 @@
   	<input type="submit" name="trova_nazione" value="Cerca nazione" formaction="nationservlet"></p>
   </form>
   
-  <p>Città trovata: id= ${ID}, nome= ${nome}, codice nazione=${countryCode}, distretto= ${distretto}, popolazione= ${population}</p>
-  	
+  <p>Città trovata: id= ${ID}, nome= ${nome}, codice nazione=${countryCode}, distretto= ${distretto}, popolazione= ${population}</p>  	
   <p>Nazione trovata: code= ${code}, nome= ${nome_n}, continente=${countinent}, popolazione= ${population_n}, superficie= ${surface}</p>
   	
 </body>
