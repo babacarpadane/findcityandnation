@@ -15,13 +15,10 @@ public class SessionServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
-		String username = request.getParameter("username");
-		
+
 		HttpSession session = request.getSession();
-		String nome_session = (String) session.getAttribute("nome-session");
-		session.setAttribute("nome-session", username);
-		request.setAttribute("usernamejsp", nome_session);
+		String username = request.getParameter("username");
+		session.setAttribute("usernamejsp", username);
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 }
